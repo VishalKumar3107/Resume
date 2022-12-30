@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "karla", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1000px;
+    background-color: hsl(210, 34%, 51%);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    width: 1000px;
+    position: relative;
+    margin: 50px;
+    background-color: #003459;
+    box-shadow: 0 35px 55px #00a8e8;
+}
+
+.left-section {
+    position: relative;
+    padding: 40px;
+    background: #01497c;
+}
+
+.left-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.profile-details {
+    display: flex;
+    color: #a9d6e5 ;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.profile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+
+.img.profile-image {
+    display: block;
+    align-items: center;
+    border: 5px solid white;
+    padding: 1rem;
+    border-radius: 30%;
+    margin: auto;
+    width: 60%;
+    object-fit: cover;
+}
+
+.profile-details h2 {
+    color: #a9d6e5 ;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 0px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+}
+.designation{
+    margin: 5px;
+    color: #a9d6e5 ;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid white;
+}
+
+.profile-details h4{
+    color: #a9d6e5 ;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 16px;
+    text-transform: uppercase;
+    
+}
+.profile-details description{
+    font-size: 0.75rem;
+    padding: 1rem;
+    color: #a9d6e5 ;
+}
+.contacts{
+    color: #a9d6e5 ;
+}
+.contact-item{
+    margin-top: 10px;
+    padding-left: -10px;
+}
+.container-text-center{
+    margin: 10px;
+    color: #a9d6e5 ;
+}
+.col{
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #a9d6e5 ;
+}
+.col1{
+    margin-left: 5px;
+}
+.col2{
+    margin-left: 15px;
+}
+.col3{
+    margin-left: 15px;
+}
+.col4{
+    margin-left: 15px;
+}
+.contacts{
+    margin-top: 20px;
+}
+.contacts ul{
+    position: relative;
+    align-items: flex-start;
+    margin-left: -20px;
+}
+.contacts ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.skills{
+  margin-top: 20px;
+  color: #a9d6e5 ;
+}
+.skills-title{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-transform: uppercase;
+}
+.skill-item{
+    font-size: .75rem;
+    margin-left: -10px;
+}
+.skill-item ul li{
+    margin-top: 17px;
+    list-style: none;
+}
+.progress{
+    color: #1D1CE5 ;
+    height: 7px;
+}
+.right-section {
+    position: relative;
+    padding: 40px;
+    background: #a9d6e5;
+    color: #012a4a;
+    padding: 32px 48px;
+}
+.about{
+    margin-bottom: 50px;
+    color: #012a4a;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.right-title{
+    color: #012a4a;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #013a63 ;
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #013a63;
+    font-size: 16px;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: #0A2647;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li ,fa{
+    color: #003459;
+    font-size: 16px;
+}
+
+@media (max-width: 674px){
+    .main-content{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
